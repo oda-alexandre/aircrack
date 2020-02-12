@@ -1,6 +1,6 @@
 # AIRCRACK
 
-<img src="https://www.aircrack-ng.org/resources/aircrack-ng-new-logo.jpg" width="200" height="200"/>
+<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/16811260/aircrack-ng-new-logo.jpg" width="200" height="200"/>
 
 ## INDEX
 
