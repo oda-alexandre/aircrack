@@ -1,11 +1,10 @@
 # AIRCRACK
 
-<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/16811260/aircrack-ng-new-logo.jpg" width="200" height="200"/>
-
+![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/16811260/aircrack-ng-new-logo.jpg)
 
 ## INDEX
 
-  - [AIRCRACK](#aircrack)
+- [AIRCRACK](#aircrack)
   - [INDEX](#index)
   - [BADGES](#badges)
   - [FIRST UPDATE](#first-update)
@@ -14,16 +13,13 @@
   - [INSTALL](#install)
   - [LICENSE](#license)
 
-
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/aircrack/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/aircrack/commits/master)
 
-
 ## FIRST UPDATE
 
 Date: 01-01-01
-
 
 ## INTRODUCTION
 
@@ -39,18 +35,15 @@ Automatically updated on :
 
 - [docker hub public](https://hub.docker.com/r/alexandreoda/aircrack)
 
-
 ## PREREQUISITES
 
 Use [docker](https://www.docker.com)
 
 Use a carte wifi with mode monitor
 
-
 ## INSTALL
 
 ```docker run -ti --rm --name aircrack -v ${HOME}:/home/aircrack --network host --cap-add=NET_ADMIN alexandreoda/aircrack```
-
 
 ## LICENSE
 
