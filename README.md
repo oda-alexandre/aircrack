@@ -12,7 +12,6 @@
   - [INSTALL](#install)
     - [DOCKER RUN](#docker-run)
   - [LICENSE](#license)
-  - [LICENSE](#license-1)
 
 ## BADGES
 
@@ -60,8 +59,6 @@ services:
     volumes:
       - "${HOME}:/home/aircrack"
 ```
-
-## LICENSE
 
 ## LICENSE
 
