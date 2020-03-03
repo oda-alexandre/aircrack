@@ -23,9 +23,9 @@ RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m' && \
   build-essential \
   make \
   libstdc++-6-dev \
-  aircrack-ng
-
-RUN echo -e '\033[36;1m ******* CLEANING ******** \033[0m' && \
+  aircrack-ng \
+  && \
+  echo -e '\033[36;1m ******* CLEANING ******** \033[0m' && \
   apt-get --purge autoremove -y && \
   rm /etc/apt/sources.list && \
   rm -rf /var/cache/apt/archives/* && \
