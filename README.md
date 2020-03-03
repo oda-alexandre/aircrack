@@ -10,6 +10,7 @@
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
+    - [DOCKER RUN](#docker-run)
   - [LICENSE](#license)
 
 ## BADGES
@@ -38,7 +39,26 @@ Use a carte wifi with mode monitor
 
 ## INSTALL
 
+### DOCKER RUN
+
 ```docker run -ti --rm --name aircrack -v ${HOME}:/home/aircrack --network host --cap-add=NET_ADMIN alexandreoda/aircrack```
+
+### DOCKER COMPOSE
+
+```yml
+version: "3.7"
+
+services:
+  aircrack:
+    container_name: aircrack
+    image: alexandreoda/aircrack
+    privileged: false
+    network_mode: host
+    cap_add:
+    - NET_ADMIN
+    volumes:
+      - "${HOME}:/home/aircrack"
+```
 
 ## LICENSE
 
