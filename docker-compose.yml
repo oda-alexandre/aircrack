@@ -5,8 +5,8 @@ services:
     container_name: aircrack
     image: alexandreoda/aircrack
     privileged: false
-    volumes:
-      - "${HOME}:/home/aircrack"
     cap_add:
       - NET_ADMIN
+    volumes:
+      - "${HOME}:/home/aircrack"
     network_mode: host
