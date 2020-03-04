@@ -25,7 +25,7 @@ Docker image of :
 
 Continuous integration on :
 
-- [gitlab](https://gitlab.com/oda-alexandre/aircrack/pipelines)
+- [gitlab pipelines](https://gitlab.com/oda-alexandre/aircrack/pipelines)
 
 Automatically updated on :
 
@@ -52,11 +52,12 @@ services:
   aircrack:
     container_name: aircrack
     image: alexandreoda/aircrack
-    network_mode: host
+    privileged: false
     cap_add:
       - NET_ADMIN
     volumes:
       - "${HOME}:/home/aircrack"
+    network_mode: host
 ```
 
 ## LICENSE
