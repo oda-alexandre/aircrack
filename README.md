@@ -52,10 +52,9 @@ services:
   aircrack:
     container_name: aircrack
     image: alexandreoda/aircrack
-    privileged: false
     network_mode: host
     cap_add:
-    - NET_ADMIN
+      - NET_ADMIN
     volumes:
       - "${HOME}:/home/aircrack"
 ```
