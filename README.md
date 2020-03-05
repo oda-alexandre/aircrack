@@ -43,7 +43,12 @@ Use a carte wifi with mode monitor
 ### DOCKER RUN
 
 ```\
-docker  run -ti --rm --name aircrack -v ${HOME}:/home/aircrack --network host --cap-add=NET_ADMIN alexandreoda/aircrack
+docker run -ti --rm \
+--name aircrack \
+--network host \
+--cap-add=NET_ADMIN \
+-v ${HOME}:/home/aircrack \
+alexandreoda/aircrack
 ```
 
 ### DOCKER COMPOSE
